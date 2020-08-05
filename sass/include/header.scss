@@ -1,0 +1,33 @@
+/* header */
+
+.header {
+    padding-top: 25px;
+    height: 100px;
+    box-sizing: border-box;
+    @extend %static-width;
+
+    .menu {
+        text-align: right;
+
+        .menu-item {
+            display: inline-block;
+            margin-right: 20px;
+
+            .menu-item__link {
+                color: rgba(0,0,0,0.87);
+                text-decoration: none;
+                font-family: arial,sans-serif;
+                font-size: 14px;
+            }
+
+            .menu-item__link:hover {
+                text-decoration: underline;
+                color: rgba(0,0,0,0.65);
+            }
+        }
+
+        .menu-item:last-child {
+            margin-right: 100px;
+        }
+    }
+}

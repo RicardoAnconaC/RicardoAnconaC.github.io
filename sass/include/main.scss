@@ -1,0 +1,84 @@
+/* content */
+
+.main {
+    box-sizing: border-box;
+    min-height: calc(100vh - 165px);
+    @extend %static-width;
+
+        .search-img {
+            text-align: center;
+            order: 1;
+            height: 150px;
+
+            img {
+                position: relative;
+                bottom: -54px;
+            }
+
+            p {
+                position: relative;
+                bottom: -15px;
+                left: 110px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(0, 110, 255);
+            }
+        }
+
+        .search-form {
+            text-align: center;
+            order: 10;
+            height: 140px;
+
+            /***    normal input    ***/
+
+            .normal-input {
+                position: relative;
+                bottom: -22px;
+                height: 42px;
+                width: 500px;
+                border-radius: 50px;
+                border: 1px solid lightgray;
+                padding: 0 40px;
+                font-size: 16px;
+                outline: none;
+                z-index: 10;
+            }
+
+            .normal-input:hover {
+                box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.35);
+            }
+
+            .fa-search {
+                position: relative;
+                bottom: -24px;
+                left: 35px;
+                z-index: 100;
+                color: rgb(172, 172, 172);
+            }
+
+            .btn-normal {
+                position: relative;
+                bottom: -60px;
+                width: 140px;
+                height: 35px;
+                border: none;
+                font-size: 15px;
+                border-radius: 5px;
+                color: #555;
+            }
+
+            .btn-normal:hover {
+                cursor: pointer;
+                border: 1px solid #bbb;
+            }
+
+            .btn-normal:first-child {
+                margin-right: 10px;
+            }
+
+            .btn-normal:last-child {
+                margin-left: 10px;
+            }
+            /********************************/
+        }
+}
